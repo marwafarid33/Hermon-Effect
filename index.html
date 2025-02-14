@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محاكاة تأثير هرمونات الغدة النخامية</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>تأثير هرمونات الغدة النخامية على الجسم</h1>
+  </header>
+  <main>
+    <section id="hormone-info">
+      <div class="hormone">
+        <h2>الهرمون المحفز للغدة الدرقية (TSH)</h2>
+        <p>يلعب دورًا أساسيًا في تنظيم عمليات الأيض والطاقة في الجسم.</p>
+        <button onclick="drawChart('TSH')">عرض الرسم البياني</button>
+      </div>
+
+      <div class="hormone">
+        <h2>هرمون النمو (GH)</h2>
+        <p>يؤثر على نمو العضلات والعظام ويساهم في بناء الجسم.</p>
+        <button onclick="drawChart('GH')">عرض الرسم البياني</button>
+      </div>
+
+      <div class="hormone">
+        <h2>الهرمون المنبه للجريب (FSH)</h2>
+        <p>مسؤول عن تنظيم الخصوبة ووظيفة الغدد التناسلية.</p>
+        <button onclick="drawChart('FSH')">عرض الرسم البياني</button>
+      </div>
+
+      <div class="hormone">
+        <h2>هرمون البرولاكتين (PRL)</h2>
+        <p>يلعب دورًا في إنتاج الحليب وتحفيز الغدد الثديية.</p>
+        <button onclick="drawChart('PRL')">عرض الرسم البياني</button>
+      </div>
+    </section>
+    <canvas id="chartCanvas"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
